@@ -2,7 +2,7 @@
 return [
     'paths' => ['api/*'],
     'allowed_methods' => ['*'],
-    'allowed_origins' => ['http://localhost:5173','http://frontend-khaki-chi-95.vercel.app'],
+    'allowed_origins' => ['http://localhost:5173','http://frontend-khaki-chi-95.vercel.app','https://front-end-react-indol.vercel.app'],
     'allowed_origins_patterns' => [],
     'allowed_headers' => ['*'],
     'exposed_headers' => [],

@@ -1,1 +1,1 @@
-web: php artisan optimize && php artisan config:cache && php artisan route:cache && php artisan view:cache && php artisan migrate --force && chmod -R 775 storage bootstrap/cache && php artisan serve --host=0.0.0.0 --port=$PORT
+web: php artisan serve --host=0.0.0.0 --port=$PORT

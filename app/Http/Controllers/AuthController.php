@@ -55,6 +55,7 @@ class AuthController extends Controller
         ]);
     }
 
+    // Log out method to sign out user
     public function logout(Request $request)
     {
         $request->user()->currentAccessToken()->delete();

@@ -15,7 +15,9 @@ use App\Http\Controllers\PublikasiController;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-
+Route::options('/{any}', function () {
+    return response()->json([], 200);
+})->where('any', '.*');
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/register', [AuthController::class, 'register']);
 
